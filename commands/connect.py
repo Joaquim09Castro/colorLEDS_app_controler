@@ -1,6 +1,6 @@
 from ppadb.client import Client
 
-def connect_device():
+def __init__():
     adb = Client()
     devices = adb.devices()
 
@@ -10,4 +10,4 @@ def connect_device():
 
     return devices[0]
 
-device = connect_device()
+device = __init__()
